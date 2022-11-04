@@ -7,3 +7,15 @@ def main(s):
     Returns:
         int: return answer
     """
+    n = len(s)
+    i = 0
+    count = 0
+    s=s.lower()
+    while i<n:
+        x = s[i]
+        if not(x=='a' or x=='e' or x=='i' or x=='o' or x=='u') and x.isalpha():
+            count+=1
+        i+=1
+    return count
+
+print(main('AB! c'))
